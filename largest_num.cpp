@@ -1,24 +1,21 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main()
+int main() 
 {
-	int N;
-	cout << " Enter the size of an array(N):";
-	cin >> N;
-	int a[N];
-	cout << " Enter " << N << " elements: ";
-	for(int i=0; i<N; i++)
+    int num1, num2, num3, largest;
+    cout << " Enter three numbers: ";
+    cin >> num1 >> num2 >> num3;
+    if (num1 >=num2 && num1 >= num3) 
 	{
-		cin >> a[N];
-	}
-	int largest = a[0];
-	for(int i=1; i<N; i++)
+        cout << " The largest number is: " << num1 << endl;
+    }
+    if (num2 >= num1 && num2 >=num3) 
 	{
-		if (a[i] > largest)
-		{
-	     	cout << " Largest number in the aray: " << a[i
-			 ] << endl;
-		}
+        cout << " The largest number is: " << num2 << endl;
+    }
+    if ( num3 >= num1 && num3 >= num2)
+    {
+    	cout << " The largest number is: " << num3 << endl;
 	}
-	return 0;
+    return 0;
 }
