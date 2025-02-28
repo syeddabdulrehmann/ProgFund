@@ -1,17 +1,21 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main()
+
+int main() 
 {
-	int a[3]={3,6,9};
-	cout << " Array Elements " << endl;
-	int size = sizeof(a)/ sizeof(a[0]);
-	int sum=0;
-	for(int i=0; i<size; i++)
+    int arr[] = {5, 10, 15, 20, 25};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int sum = 0;
+
+    for (int i = 0; i < n; i++) 
 	{
-		sum+= a[i];
-	}
-	double average =(double)sum / size;    // Type Casting
-	cout << " Sum of array elements:" << sum << endl;
-	cout << " Average of array elements:" << average << endl;
-	return 0;
+        sum += arr[i];
+    }
+
+    float average = (float)sum / n;
+    
+    cout << "Sum: " << sum << endl;
+    cout << "Average: " << average << endl;
+
+    return 0;
 }
