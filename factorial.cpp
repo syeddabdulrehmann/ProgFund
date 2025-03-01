@@ -1,26 +1,19 @@
 #include <iostream>
 using namespace std;
 
+long long factorial(int num) 
+{
+    long long fact = 1;
+    for (int i = 1; i <= num; i++)
+        fact *= i;
+    return fact;
+}
+
 int main() 
 {
     int num;
-    long long factorial = 1;
-    
     cout << "Enter a number: ";
     cin >> num;
-    
-    if (num < 0) 
-	{
-        cout << "Factorial of negative numbers is not defined." << endl;
-    }
-	else 
-	{
-        for (int i = 1; i <= num; i++) 
-		{
-            factorial *= i;
-        }
-        cout << "Factorial of " << num << " is: " << factorial << endl;
-    }
-    
+    cout << "Factorial of " << num << " is: " << factorial(num) << endl;
     return 0;
 }
