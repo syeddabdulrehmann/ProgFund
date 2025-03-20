@@ -53,4 +53,4 @@ This repository serves as a personal archive of my programming journey and a hel
 
 📧 Email: syedabdulrehman.uajk@gmail.com
 🐙 GitHub: https://github.com/syeddabdulrehmann
-💼 LinkedIn: 
+💼 LinkedIn: www.linkedin.com/in/syed-abdulrehman-94a761357
